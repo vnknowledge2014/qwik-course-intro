@@ -9,7 +9,7 @@ export const BeerSelector = component$(() => {
   useStylesScoped$(styles);
 
   const beerResource = useResource$<Beer[]>(async () => {
-    const rs = await fetch('http://localhost:4173/api/beers');
+    const rs = await fetch('qwik-course-intro.pages.dev/api/beers');
     return rs.json();
   });
 
